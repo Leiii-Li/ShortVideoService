@@ -1,5 +1,7 @@
 package com.nelson.mouseshortvideo.utils;
 
+import com.alibaba.fastjson.JSON;
+
 /**
  * @Description: 自定义响应数据结构
  * 				这个类是提供给门户，ios，安卓，微信商城用的
@@ -104,4 +106,8 @@ public class MouseShortVideoResult {
 		this.ok = ok;
 	}
 
+	public String toJsonString(){
+        String s = JSON.toJSONString(this);
+        return s;
+    }
 }

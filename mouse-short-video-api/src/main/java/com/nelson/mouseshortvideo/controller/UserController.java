@@ -1,5 +1,6 @@
 package com.nelson.mouseshortvideo.controller;
 
+import com.alibaba.fastjson.JSON;
 import com.nelson.mouseshortvideo.pojo.Users;
 import com.nelson.mouseshortvideo.service.UserService;
 import com.nelson.mouseshortvideo.utils.MD5Utils;
@@ -30,9 +31,9 @@ public class UserController extends BasicController {
 
     @PostMapping("/uploadFaceImage")
     @ApiOperation("上传头像")
-    public MouseShortVideoResult uploadFaceIcon(String userId, @RequestParam("file") MultipartFile[] files) {
+    public String uploadFaceIcon(String userId, @RequestParam("file") MultipartFile[] files) {
         if (StringUtils.isBlank(userId)) {
-            return MouseShortVideoResult.errorMsg("用户ID不能为空");
+            return MouseShortVideoResult.errorMsg("用户ID不能为空").toJsonString();
         }
         FileOutputStream fos = null;
         InputStream fis = null;
@@ -56,10 +57,10 @@ public class UserController extends BasicController {
                     IOUtils.copy(fis, fos);
                 }
             } else {
-                return MouseShortVideoResult.errorMsg("上传失败");
+                return MouseShortVideoResult.errorMsg("上传失败").toJsonString();
             }
         } catch (Exception e) {
-            return MouseShortVideoResult.errorMsg("上传失败");
+            return MouseShortVideoResult.errorMsg("上传失败").toJsonString();
         } finally {
             try {
                 if (fos != null) {
@@ -76,11 +77,12 @@ public class UserController extends BasicController {
         mUserService.updateUser(user);
         UserVo userVO = new UserVo();
         BeanUtils.copyProperties(user, userVO);
-        return MouseShortVideoResult.ok(userVO);
+        return MouseShortVideoResult.ok(userVO).toJsonString();
     }
     @PostMapping("/uploadFaceImage1")
     @ApiOperation("上传头像")
     public MouseShortVideoResult uploadFaceIcon1() {
+        System.out.println("上传图片成功");
         return MouseShortVideoResult.ok();
     }
 }
