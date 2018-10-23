@@ -1,0 +1,1136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f9a96379-8888-47b8-be7a-bd734d23a3b8" name="Default Changelist" comment="first commit">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-api/mouseshortvideoapi.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-api/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-api/src/main/java/com/nelson/mouseshortvideo/DemoApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-api/src/main/java/com/nelson/mouseshortvideo/ServletInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-api/src/main/java/com/nelson/mouseshortvideo/Swagger2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-api/src/main/java/com/nelson/mouseshortvideo/controller/BasicController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-api/src/main/java/com/nelson/mouseshortvideo/controller/IndexController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-api/src/main/java/com/nelson/mouseshortvideo/controller/RegisterLoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-api/src/main/java/com/nelson/mouseshortvideo/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-api/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-api/src/main/resources/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-api/src/main/resources/mapper/BgmMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-api/src/main/resources/mapper/CommentsMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-api/src/main/resources/mapper/SearchRecordsMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-api/src/main/resources/mapper/UsersFansMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-api/src/main/resources/mapper/UsersLikeVideosMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-api/src/main/resources/mapper/UsersMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-api/src/main/resources/mapper/UsersReportMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-api/src/main/resources/mapper/VideosMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-api/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-api/target/classes/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-api/target/classes/com/nelson/mouseshortvideo/DemoApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-api/target/classes/com/nelson/mouseshortvideo/ServletInitializer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-api/target/classes/com/nelson/mouseshortvideo/Swagger2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-api/target/classes/com/nelson/mouseshortvideo/controller/BasicController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-api/target/classes/com/nelson/mouseshortvideo/controller/IndexController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-api/target/classes/com/nelson/mouseshortvideo/controller/RegisterLoginController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-api/target/classes/com/nelson/mouseshortvideo/controller/UserController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-api/target/classes/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-api/target/classes/mapper/BgmMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-api/target/classes/mapper/CommentsMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-api/target/classes/mapper/SearchRecordsMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-api/target/classes/mapper/UsersFansMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-api/target/classes/mapper/UsersLikeVideosMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-api/target/classes/mapper/UsersMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-api/target/classes/mapper/UsersReportMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-api/target/classes/mapper/VideosMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-api/target/classes/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-api/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-api/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-api/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-api/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-api/target/mouse-short-video-api-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-common/mouseshortvideocommon.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-common/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-common/src/main/java/com/nelson/mouseshortvideo/utils/JsonUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-common/src/main/java/com/nelson/mouseshortvideo/utils/MD5Utils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-common/src/main/java/com/nelson/mouseshortvideo/utils/MouseShortVideoResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-common/src/main/java/com/nelson/mouseshortvideo/utils/MyMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-common/src/main/java/com/nelson/mouseshortvideo/utils/PagedResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-common/src/main/java/com/nelson/mouseshortvideo/utils/RedisOperator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-common/src/main/java/com/nelson/mouseshortvideo/utils/TimeAgoUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-common/src/main/java/org/n3r/idworker/Code.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-common/src/main/java/org/n3r/idworker/DayCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-common/src/main/java/org/n3r/idworker/Id.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-common/src/main/java/org/n3r/idworker/IdWorker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-common/src/main/java/org/n3r/idworker/InvalidSystemClock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-common/src/main/java/org/n3r/idworker/RandomCodeStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-common/src/main/java/org/n3r/idworker/Sid.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-common/src/main/java/org/n3r/idworker/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-common/src/main/java/org/n3r/idworker/WorkerIdStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-common/src/main/java/org/n3r/idworker/strategy/DayPrefixRandomCodeStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-common/src/main/java/org/n3r/idworker/strategy/DefaultRandomCodeStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-common/src/main/java/org/n3r/idworker/strategy/DefaultWorkerIdStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-common/src/main/java/org/n3r/idworker/strategy/FileLock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-common/src/main/java/org/n3r/idworker/utils/HttpReq.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-common/src/main/java/org/n3r/idworker/utils/IPv4Utils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-common/src/main/java/org/n3r/idworker/utils/Ip.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-common/src/main/java/org/n3r/idworker/utils/Props.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-common/src/main/java/org/n3r/idworker/utils/Serializes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-common/src/main/java/org/n3r/idworker/utils/Utils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-common/target/classes/com/nelson/mouseshortvideo/utils/JsonUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-common/target/classes/com/nelson/mouseshortvideo/utils/MD5Utils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-common/target/classes/com/nelson/mouseshortvideo/utils/MyMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-common/target/classes/com/nelson/mouseshortvideo/utils/PagedResult.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-common/target/classes/com/nelson/mouseshortvideo/utils/RedisOperator.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-common/target/classes/com/nelson/mouseshortvideo/utils/TimeAgoUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-common/target/classes/org/n3r/idworker/Code.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-common/target/classes/org/n3r/idworker/DayCode.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-common/target/classes/org/n3r/idworker/Id.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-common/target/classes/org/n3r/idworker/IdWorker.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-common/target/classes/org/n3r/idworker/InvalidSystemClock.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-common/target/classes/org/n3r/idworker/RandomCodeStrategy.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-common/target/classes/org/n3r/idworker/Sid$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-common/target/classes/org/n3r/idworker/Sid.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-common/target/classes/org/n3r/idworker/Test.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-common/target/classes/org/n3r/idworker/WorkerIdStrategy.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-common/target/classes/org/n3r/idworker/strategy/DayPrefixRandomCodeStrategy.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-common/target/classes/org/n3r/idworker/strategy/DefaultRandomCodeStrategy$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-common/target/classes/org/n3r/idworker/strategy/DefaultRandomCodeStrategy.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-common/target/classes/org/n3r/idworker/strategy/DefaultWorkerIdStrategy$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-common/target/classes/org/n3r/idworker/strategy/DefaultWorkerIdStrategy$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-common/target/classes/org/n3r/idworker/strategy/DefaultWorkerIdStrategy.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-common/target/classes/org/n3r/idworker/strategy/FileLock.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-common/target/classes/org/n3r/idworker/utils/HttpReq.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-common/target/classes/org/n3r/idworker/utils/IPv4Utils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-common/target/classes/org/n3r/idworker/utils/Ip.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-common/target/classes/org/n3r/idworker/utils/Props$Silent.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-common/target/classes/org/n3r/idworker/utils/Props.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-common/target/classes/org/n3r/idworker/utils/Serializes.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-common/target/classes/org/n3r/idworker/utils/Utils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-common/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-common/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-common/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-common/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-common/target/mouse-short-video-common-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-mapper/mouseshortvideomapper.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-mapper/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-mapper/src/main/java/com/nelson/mouseshortvideo/mapper/BgmMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-mapper/src/main/java/com/nelson/mouseshortvideo/mapper/CommentsMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-mapper/src/main/java/com/nelson/mouseshortvideo/mapper/SearchRecordsMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-mapper/src/main/java/com/nelson/mouseshortvideo/mapper/UsersFansMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-mapper/src/main/java/com/nelson/mouseshortvideo/mapper/UsersLikeVideosMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-mapper/src/main/java/com/nelson/mouseshortvideo/mapper/UsersMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-mapper/src/main/java/com/nelson/mouseshortvideo/mapper/UsersReportMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-mapper/src/main/java/com/nelson/mouseshortvideo/mapper/VideosMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-mapper/target/classes/com/nelson/mouseshortvideo/mapper/BgmMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-mapper/target/classes/com/nelson/mouseshortvideo/mapper/CommentsMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-mapper/target/classes/com/nelson/mouseshortvideo/mapper/SearchRecordsMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-mapper/target/classes/com/nelson/mouseshortvideo/mapper/UsersFansMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-mapper/target/classes/com/nelson/mouseshortvideo/mapper/UsersLikeVideosMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-mapper/target/classes/com/nelson/mouseshortvideo/mapper/UsersMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-mapper/target/classes/com/nelson/mouseshortvideo/mapper/UsersReportMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-mapper/target/classes/com/nelson/mouseshortvideo/mapper/VideosMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-mapper/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-mapper/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-mapper/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-mapper/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-mapper/target/mouse-short-video-mapper-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-pojo/mouseshortvideopojo.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-pojo/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-pojo/src/main/java/com/nelson/mouseshortvideo/pojo/Bgm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-pojo/src/main/java/com/nelson/mouseshortvideo/pojo/Comments.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-pojo/src/main/java/com/nelson/mouseshortvideo/pojo/SearchRecords.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-pojo/src/main/java/com/nelson/mouseshortvideo/pojo/Users.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-pojo/src/main/java/com/nelson/mouseshortvideo/pojo/UsersFans.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-pojo/src/main/java/com/nelson/mouseshortvideo/pojo/UsersLikeVideos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-pojo/src/main/java/com/nelson/mouseshortvideo/pojo/UsersReport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-pojo/src/main/java/com/nelson/mouseshortvideo/pojo/Videos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-pojo/src/main/java/com/nelson/mouseshortvideo/vo/UserVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-pojo/target/classes/com/nelson/mouseshortvideo/pojo/Bgm.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-pojo/target/classes/com/nelson/mouseshortvideo/pojo/Comments.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-pojo/target/classes/com/nelson/mouseshortvideo/pojo/SearchRecords.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-pojo/target/classes/com/nelson/mouseshortvideo/pojo/Users.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-pojo/target/classes/com/nelson/mouseshortvideo/pojo/UsersFans.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-pojo/target/classes/com/nelson/mouseshortvideo/pojo/UsersLikeVideos.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-pojo/target/classes/com/nelson/mouseshortvideo/pojo/UsersReport.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-pojo/target/classes/com/nelson/mouseshortvideo/pojo/Videos.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-pojo/target/classes/com/nelson/mouseshortvideo/vo/UserVo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-pojo/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-pojo/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-pojo/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-pojo/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-pojo/target/mouse-short-video-pojo-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-service/mouseshortvideoservice.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-service/src/main/java/com/nelson/mouseshortvideo/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-service/src/main/java/com/nelson/mouseshortvideo/service/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-service/target/classes/com/nelson/mouseshortvideo/service/UserService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-service/target/classes/com/nelson/mouseshortvideo/service/UserServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-service/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-service/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouse-short-video-service/target/mouse-short-video-service-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mouseshortvideo.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/mouse-short-video-service/target/" />
+    <ignored path="$PROJECT_DIR$/mouse-short-video-mapper/target/" />
+    <ignored path="$PROJECT_DIR$/mouse-short-video-common/target/" />
+    <ignored path="$PROJECT_DIR$/mouse-short-video-pojo/target/" />
+    <ignored path="$PROJECT_DIR$/mouse-short-video-api/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-1577623716">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="6" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.10" value="1" />
+          <entry key="project.open.time.12" value="1" />
+          <entry key="project.open.time.6" value="1" />
+          <entry key="project.open.time.9" value="3" />
+          <entry key="project.opened" value="7" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="3093" />
+          <entry key="properties" value="102" />
+          <entry key="txt" value="12" />
+          <entry key="xml" value="64" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="3093" />
+          <entry key="PLAIN_TEXT" value="12" />
+          <entry key="Properties" value="102" />
+          <entry key="XML" value="64" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="class" value="1" />
+          <entry key="iml" value="1" />
+          <entry key="java" value="115" />
+          <entry key="properties" value="12" />
+          <entry key="xml" value="15" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CLASS" value="1" />
+          <entry key="IDEA_MODULE" value="1" />
+          <entry key="JAVA" value="115" />
+          <entry key="Properties" value="12" />
+          <entry key="XML" value="15" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.vcs.git.usages" />
+      <usages-collector id="statistics.js.language.service.starts" />
+      <usages-collector id="statistics.spring.boot.run.usages" />
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/mouse-short-video-api/src/main/java/com/nelson/mouseshortvideo/controller/UserController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="303">
+              <caret line="85" column="1" lean-forward="true" selection-start-line="85" selection-start-column="1" selection-end-line="85" selection-end-column="1" />
+              <folding>
+                <element signature="e#3132#3133#0" expanded="true" />
+                <element signature="e#3181#3182#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mouse-short-video-service/src/main/java/com/nelson/mouseshortvideo/service/UserServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1000">
+              <caret line="47" column="54" selection-start-line="47" selection-start-column="54" selection-end-line="47" selection-end-column="54" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1479#1480#0" expanded="true" />
+                <element signature="e#1540#1541#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mouse-short-video-api/src/main/java/com/nelson/mouseshortvideo/controller/RegisterLoginController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1450">
+              <caret line="74" column="52" selection-start-line="73" selection-start-column="7" selection-end-line="74" selection-end-column="52" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mouse-short-video-api/src/main/java/com/nelson/mouseshortvideo/controller/BasicController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="250">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="FxmlFile" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>IMoocJSONResult</find>
+      <find>headerUserId</find>
+      <find>MouseShotVideoResult</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>MouseShotVideoResult</replace>
+      <replace>MouseShortVideoResult</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/mouse-short-video-pojo/pom.xml" />
+        <option value="$PROJECT_DIR$/mouse-short-video-mapper/pom.xml" />
+        <option value="$PROJECT_DIR$/mouse-short-video-service/pom.xml" />
+        <option value="$PROJECT_DIR$/mouse-short-video-api/pom.xml" />
+        <option value="$PROJECT_DIR$/mouse-short-video-api/src/main/java/com/nelson/mouseshortvideo/ServletInitializer.java" />
+        <option value="$PROJECT_DIR$/mouse-short-video-common/src/main/java/com/nelson/mouseshortvideo/MouseShotVideoResult.java" />
+        <option value="$PROJECT_DIR$/mouse-short-video-api/src/main/resources/log4j.properties" />
+        <option value="$PROJECT_DIR$/mouse-short-video-pojo/src/main/java/com/nelson/mouseshortvideo/pojo/UsersLikeVideos.java" />
+        <option value="$PROJECT_DIR$/mouse-short-video-api/src/main/resources/mybatis-config.xml" />
+        <option value="$PROJECT_DIR$/mouse-short-video-service/src/main/java/UserService.java" />
+        <option value="$PROJECT_DIR$/mouse-short-video-common/src/main/java/com/nelson/mouseshortvideo/MyMapper.java" />
+        <option value="$PROJECT_DIR$/mouse-short-video-mapper/src/main/java/mapper/VideosMapper.java" />
+        <option value="$PROJECT_DIR$/mouse-short-video-mapper/src/main/java/mapper/BgmMapper.java" />
+        <option value="$PROJECT_DIR$/mouse-short-video-mapper/src/main/java/mapper/CommentsMapper.java" />
+        <option value="$PROJECT_DIR$/mouse-short-video-mapper/src/main/java/mapper/SearchRecordsMapper.java" />
+        <option value="$PROJECT_DIR$/mouse-short-video-mapper/src/main/java/mapper/UsersFansMapper.java" />
+        <option value="$PROJECT_DIR$/mouse-short-video-mapper/src/main/java/mapper/UsersMapper.java" />
+        <option value="$PROJECT_DIR$/mouse-short-video-mapper/src/main/java/mapper/UsersReportMapper.java" />
+        <option value="$PROJECT_DIR$/mouse-short-video-common/src/main/java/com/nelson/mouseshortvideo/utils/MD5Utils.java" />
+        <option value="$PROJECT_DIR$/mouse-short-video-api/src/main/java/com/nelson/mouseshortvideo/controller/RegistLoginController.java" />
+        <option value="$PROJECT_DIR$/mouse-short-video-service/src/main/java/com/nelson/mouseshortvideo/service/UsersService.java" />
+        <option value="$PROJECT_DIR$/mouse-short-video-mapper/src/main/java/com/nelson/mouseshortvideo/mapper/UsersLikeVideosMapper.java" />
+        <option value="$PROJECT_DIR$/mouse-short-video-api/src/main/java/com/nelson/mouseshortvideo/Swagger2.java" />
+        <option value="$PROJECT_DIR$/mouse-short-video-api/src/main/java/com/nelson/mouseshortvideo/DemoApplication.java" />
+        <option value="$PROJECT_DIR$/mouse-short-video-common/src/main/java/com/nelson/mouseshortvideo/utils/TimeAgoUtils.java" />
+        <option value="$PROJECT_DIR$/mouse-short-video-common/pom.xml" />
+        <option value="$PROJECT_DIR$/mouse-short-video-api/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/mouse-short-video-pojo/src/main/java/com/nelson/mouseshortvideo/vo/UserVo.java" />
+        <option value="$PROJECT_DIR$/mouse-short-video-pojo/src/main/java/com/nelson/mouseshortvideo/pojo/Users.java" />
+        <option value="$PROJECT_DIR$/mouse-short-video-api/src/main/java/com/nelson/mouseshortvideo/controller/IndexController.java" />
+        <option value="$PROJECT_DIR$/mouse-short-video-service/src/main/java/com/nelson/mouseshortvideo/service/UserService.java" />
+        <option value="$PROJECT_DIR$/mouse-short-video-service/src/main/java/com/nelson/mouseshortvideo/service/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/mouse-short-video-common/src/main/java/com/nelson/mouseshortvideo/utils/MouseShortVideoResult.java" />
+        <option value="$PROJECT_DIR$/mouse-short-video-api/src/main/java/com/nelson/mouseshortvideo/controller/BasicController.java" />
+        <option value="$PROJECT_DIR$/mouse-short-video-api/src/main/java/com/nelson/mouseshortvideo/controller/RegisterLoginController.java" />
+        <option value="$PROJECT_DIR$/mouse-short-video-api/src/main/java/com/nelson/mouseshortvideo/controller/UserController.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="E:\repository" />
+        <option name="mavenHome" value="E:/apache-maven-3.5.4" />
+        <option name="userSettingsFile" value="E:\apache-maven-3.5.4\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="mouse-short-video" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="mouse-short-video" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="380" />
+    <option name="y" value="138" />
+    <option name="width" value="1400" />
+    <option name="height" value="1100" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="mouseshortvideo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mouseshortvideo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mouseshortvideo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mouseshortvideo" type="462c0819:PsiDirectoryNode" />
+              <item name="mouse-short-video-api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mouseshortvideo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mouseshortvideo" type="462c0819:PsiDirectoryNode" />
+              <item name="mouse-short-video-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mouseshortvideo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mouseshortvideo" type="462c0819:PsiDirectoryNode" />
+              <item name="mouse-short-video-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mouseshortvideo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mouseshortvideo" type="462c0819:PsiDirectoryNode" />
+              <item name="mouse-short-video-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mouseshortvideo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mouseshortvideo" type="462c0819:PsiDirectoryNode" />
+              <item name="mouse-short-video-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="mouseshortvideo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mouseshortvideo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mouseshortvideo" type="462c0819:PsiDirectoryNode" />
+              <item name="mouse-short-video-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="mouseshortvideo" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mouseshortvideo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mouseshortvideo" type="462c0819:PsiDirectoryNode" />
+              <item name="mouse-short-video-common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mouseshortvideo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mouseshortvideo" type="462c0819:PsiDirectoryNode" />
+              <item name="mouse-short-video-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mouseshortvideo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mouseshortvideo" type="462c0819:PsiDirectoryNode" />
+              <item name="mouse-short-video-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mouseshortvideo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mouseshortvideo" type="462c0819:PsiDirectoryNode" />
+              <item name="mouse-short-video-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mouseshortvideo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mouseshortvideo" type="462c0819:PsiDirectoryNode" />
+              <item name="mouse-short-video-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mouseshortvideo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mouseshortvideo" type="462c0819:PsiDirectoryNode" />
+              <item name="mouse-short-video-pojo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mouseshortvideo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mouseshortvideo" type="462c0819:PsiDirectoryNode" />
+              <item name="mouse-short-video-pojo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mouseshortvideo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mouseshortvideo" type="462c0819:PsiDirectoryNode" />
+              <item name="mouse-short-video-pojo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mouseshortvideo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mouseshortvideo" type="462c0819:PsiDirectoryNode" />
+              <item name="mouse-short-video-pojo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mouseshortvideo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mouseshortvideo" type="462c0819:PsiDirectoryNode" />
+              <item name="mouse-short-video-pojo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="mouseshortvideo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mouseshortvideo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mouseshortvideo" type="462c0819:PsiDirectoryNode" />
+              <item name="mouse-short-video-pojo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="mouseshortvideo" type="462c0819:PsiDirectoryNode" />
+              <item name="vo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mouseshortvideo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mouseshortvideo" type="462c0819:PsiDirectoryNode" />
+              <item name="mouse-short-video-service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mouseshortvideo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mouseshortvideo" type="462c0819:PsiDirectoryNode" />
+              <item name="mouse-short-video-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mouseshortvideo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mouseshortvideo" type="462c0819:PsiDirectoryNode" />
+              <item name="mouse-short-video-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mouseshortvideo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mouseshortvideo" type="462c0819:PsiDirectoryNode" />
+              <item name="mouse-short-video-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mouseshortvideo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mouseshortvideo" type="462c0819:PsiDirectoryNode" />
+              <item name="mouse-short-video-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="E:/Program Files/Git/bin/git.exe" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.nelson.mouseshortvideo.controller" />
+      <recent name="com.nelson.mouseshortvideo.vo" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\J2EEProjects\mouseshortvideo\mouse-short-video-api\src\main\resources\mapper" />
+      <recent name="F:\J2EEProjects\mouseshortvideo\mouse-short-video-common\src\main\java\com\nelson\mouseshortvideo\utils" />
+      <recent name="F:\J2EEProjects\mouseshortvideo\mouse-short-video-common\src\main\java" />
+      <recent name="F:\J2EEProjects\mouseshortvideo\mouse-short-video-common\src\main\java\com\nelson\mouseshortvideo" />
+      <recent name="F:\J2EEProjects\mouseshortvideo\mouse-short-video-mapper\src\main\java\com\nelson\mouseshortvideo\mapper" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="DemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="mouseshortvideoapi" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.nelson.mouseshortvideo.DemoApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.DemoApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f9a96379-8888-47b8-be7a-bd734d23a3b8" name="Default Changelist" comment="" />
+      <created>1540127936581</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1540127936581</updated>
+      <workItem from="1540127940473" duration="719000" />
+      <workItem from="1540128674731" duration="3898000" />
+      <workItem from="1540133559953" duration="2421000" />
+      <workItem from="1540170482422" duration="6467000" />
+      <workItem from="1540187522469" duration="11585000" />
+      <workItem from="1540212666480" duration="9437000" />
+      <workItem from="1540253244506" duration="886000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="35413000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26599148" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.44468546" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.46095446" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Spring" order="8" weight="0.32936078" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32936078" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32936078" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="right" id="Palette&#9;" order="4" />
+      <window_info anchor="right" id="Maven Projects" order="5" weight="0.31130064" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/mouse-short-video-mapper/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="15" column="46" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mouse-short-video-api/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="9" column="38" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mouse-short-video-service/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="383">
+          <caret line="16" column="48" selection-start-line="16" selection-start-column="48" selection-end-line="16" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mouse-short-video-pojo/src/main/java/com/nelson/mouseshortvideo/pojo/SearchRecords.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mouse-short-video-pojo/src/main/java/com/nelson/mouseshortvideo/pojo/UsersFans.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mouse-short-video-pojo/src/main/java/com/nelson/mouseshortvideo/pojo/UsersLikeVideos.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="10" column="22" lean-forward="true" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mouse-short-video-pojo/src/main/java/com/nelson/mouseshortvideo/pojo/UsersReport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mouse-short-video-pojo/src/main/java/com/nelson/mouseshortvideo/pojo/Videos.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mouse-short-video-mapper/src/main/resources/com.nelson.mouseshortvideo.mapper/SearchRecordsMapper.xml" />
+    <entry file="file://$PROJECT_DIR$/mouse-short-video-mapper/src/main/resources/com.nelson.mouseshortvideo.mapper/BgmMapper.xml" />
+    <entry file="file://$PROJECT_DIR$/mouse-short-video-api/src/main/resources/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="15" column="62" selection-start-line="15" selection-start-column="62" selection-end-line="15" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mouse-short-video-api/src/main/resources/mybatis-config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="12" column="15" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mouse-short-video-service/src/main/java/UserService.java" />
+    <entry file="file://$PROJECT_DIR$/mouse-short-video-common/src/main/java/com/nelson/mouseshortvideo/utils/JsonUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1048">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/Program Files/Java/jdk1.8.0_191/src.zip!/java/io/PrintStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="803" column="16" selection-start-line="803" selection-start-column="16" selection-end-line="803" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mouse-short-video-common/src/main/java/com/nelson/mouseshortvideo/utils/MD5Utils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="6" column="23" lean-forward="true" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mouse-short-video-common/src/main/java/org/n3r/idworker/utils/Ip.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mouse-short-video-common/src/main/java/com/nelson/mouseshortvideo/utils/MyMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="29" column="17" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mouse-short-video-pojo/src/main/java/com/nelson/mouseshortvideo/pojo/Comments.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="18" column="14" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mouse-short-video-mapper/src/main/java/com/nelson/mouseshortvideo/mapper/SearchRecordsMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mouse-short-video-mapper/src/main/java/com/nelson/mouseshortvideo/mapper/UsersFansMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mouse-short-video-mapper/src/main/java/com/nelson/mouseshortvideo/mapper/UsersLikeVideosMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mouse-short-video-mapper/src/main/java/com/nelson/mouseshortvideo/mapper/UsersMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mouse-short-video-api/src/main/java/com/nelson/mouseshortvideo/ServletInitializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="8" column="44" selection-start-line="8" selection-start-column="44" selection-end-line="8" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mouse-short-video-common/src/main/java/org/n3r/idworker/Code.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="8" selection-start-column="8" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mouse-short-video-mapper/src/main/java/com/nelson/mouseshortvideo/mapper/UsersReportMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mouse-short-video-mapper/src/main/java/com/nelson/mouseshortvideo/mapper/VideosMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="8" selection-start-column="8" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mouse-short-video-common/mouseshortvideocommon.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mouse-short-video-common/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="542">
+          <caret line="140" column="21" selection-start-line="140" selection-start-column="21" selection-end-line="140" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mouse-short-video-common/src/main/java/com/nelson/mouseshortvideo/utils/PagedResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mouse-short-video-common/src/main/java/com/nelson/mouseshortvideo/utils/TimeAgoUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-158">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mouse-short-video-mapper/src/main/java/com/nelson/mouseshortvideo/mapper/CommentsMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mouse-short-video-mapper/src/main/java/com/nelson/mouseshortvideo/mapper/BgmMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mouse-short-video-api/src/main/resources/mapper/VideosMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="10" column="44" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mouse-short-video-api/src/main/resources/mapper/BgmMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="56" lean-forward="true" selection-start-line="2" selection-start-column="56" selection-end-line="2" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mouse-short-video-pojo/src/main/java/com/nelson/mouseshortvideo/pojo/Bgm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="8" selection-start-column="8" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/repository/org/springframework/data/spring-data-redis/1.8.7.RELEASE/spring-data-redis-1.8.7.RELEASE.jar!/org/springframework/data/redis/core/StringRedisTemplate.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="65" lean-forward="true" selection-start-line="8" selection-start-column="65" selection-end-line="8" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mouse-short-video-common/src/main/java/com/nelson/mouseshortvideo/utils/RedisOperator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-100">
+          <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mouse-short-video-api/src/main/java/com/nelson/mouseshortvideo/Swagger2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="21" column="15" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mouse-short-video-pojo/src/main/java/com/nelson/mouseshortvideo/pojo/Users.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-275">
+          <caret line="34" column="7" lean-forward="true" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mouse-short-video-api/src/main/java/com/nelson/mouseshortvideo/DemoApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mouse-short-video-api/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="47" selection-start-line="47" selection-end-line="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mouse-short-video-api/src/main/java/com/nelson/mouseshortvideo/controller/IndexController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="9" column="20" lean-forward="true" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mouse-short-video-common/src/main/java/com/nelson/mouseshortvideo/utils/MouseShortVideoResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="64" column="11" selection-start-line="64" selection-start-column="11" selection-end-line="64" selection-end-column="11" />
+          <folding>
+            <element signature="e#703#704#0" expanded="true" />
+            <element signature="e#757#758#0" expanded="true" />
+            <element signature="e#805#806#0" expanded="true" />
+            <element signature="e#859#860#0" expanded="true" />
+            <element signature="e#927#928#0" expanded="true" />
+            <element signature="e#991#992#0" expanded="true" />
+            <element signature="e#1060#1061#0" expanded="true" />
+            <element signature="e#1128#1129#0" expanded="true" />
+            <element signature="e#1201#1202#0" expanded="true" />
+            <element signature="e#1265#1266#0" expanded="true" />
+            <element signature="e#1339#1340#0" expanded="true" />
+            <element signature="e#1403#1404#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mouse-short-video-pojo/src/main/java/com/nelson/mouseshortvideo/vo/UserVo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="11" column="28" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mouse-short-video-service/src/main/java/com/nelson/mouseshortvideo/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="27" column="32" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mouse-short-video-api/src/main/java/com/nelson/mouseshortvideo/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="85" column="1" lean-forward="true" selection-start-line="85" selection-start-column="1" selection-end-line="85" selection-end-column="1" />
+          <folding>
+            <element signature="e#3132#3133#0" expanded="true" />
+            <element signature="e#3181#3182#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mouse-short-video-service/src/main/java/com/nelson/mouseshortvideo/service/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1000">
+          <caret line="47" column="54" selection-start-line="47" selection-start-column="54" selection-end-line="47" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1479#1480#0" expanded="true" />
+            <element signature="e#1540#1541#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mouse-short-video-api/src/main/java/com/nelson/mouseshortvideo/controller/RegisterLoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1450">
+          <caret line="74" column="52" selection-start-line="73" selection-start-column="7" selection-end-line="74" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mouse-short-video-api/src/main/java/com/nelson/mouseshortvideo/controller/BasicController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>mouseshortvideomapper</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: com.alibaba:druid-spring-boot-starter:1.1.0</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
