@@ -52,8 +52,8 @@ public class RegisterLoginController extends BasicController {
     @ApiOperation("用户登陆")
     public MouseShortVideoResult login(@RequestBody Users user) throws Exception {
         user.setPassword(MD5Utils.getMD5Str(user.getPassword()));
-        if (mUserService.login(user)) {
-            user.setPassword("");
+        user = mUserService.login(user);
+        if (user!=null) {
             // 将当前会话保存至Redis
             return MouseShortVideoResult.ok(setUserRedisSessionToken(user));
         } else {

@@ -23,7 +23,7 @@ public interface UserService {
      * @param user
      * @return
      */
-    boolean login(Users user);
+    Users login(Users user);
 
     void updateUser(Users user);
 }

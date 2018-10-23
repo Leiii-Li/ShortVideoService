@@ -34,13 +34,14 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public boolean login(Users user) {
+    public Users login(Users user) {
         Users dbUser = mUserMapper.selectOne(user);
         if (dbUser!=null && dbUser.getUsername().equals(user.getUsername()) && dbUser.getPassword().equals(user.getPassword())) {
-            user.setId(dbUser.getId());
-            return true;
+            user = dbUser;
+            user.setPassword("");
+            return user;
         }
-        return false;
+        return null;
     }
 
     @Override

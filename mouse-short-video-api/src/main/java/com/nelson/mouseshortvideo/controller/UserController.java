@@ -39,7 +39,7 @@ public class UserController extends BasicController {
         InputStream fis = null;
         String uploadPathDB;
         try {
-            uploadPathDB = userId + "/face/";
+            uploadPathDB = "/"+userId + "/face/";
             if (files != null && files.length > 0) {
                 String filename = files[0].getOriginalFilename();
                 if (StringUtils.isNotBlank(filename)) {
@@ -75,14 +75,7 @@ public class UserController extends BasicController {
         user.setId(userId);
         user.setFaceImage(uploadPathDB);
         mUserService.updateUser(user);
-        UserVo userVO = new UserVo();
-        BeanUtils.copyProperties(user, userVO);
-        return MouseShortVideoResult.ok(userVO).toJsonString();
-    }
-    @PostMapping("/uploadFaceImage1")
-    @ApiOperation("上传头像")
-    public MouseShortVideoResult uploadFaceIcon1() {
-        System.out.println("上传图片成功");
-        return MouseShortVideoResult.ok();
+        user.setPassword("");
+        return MouseShortVideoResult.ok(user).toJsonString();
     }
 }
