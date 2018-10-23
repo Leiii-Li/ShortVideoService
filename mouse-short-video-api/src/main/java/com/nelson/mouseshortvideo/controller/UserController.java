@@ -29,6 +29,26 @@ public class UserController extends BasicController {
     @Autowired
     private UserService mUserService;
 
+
+    @PostMapping("/query")
+    @ApiOperation("查询用户信息")
+    @ApiImplicitParam(name="userId", value="用户id", required=true,
+            dataType="String", paramType="query")
+    public MouseShortVideoResult query(String userId){
+        if(StringUtils.isBlank(userId)){
+            return MouseShortVideoResult.errorMsg("用户ID不能为空");
+        }
+        Users user = mUserService.query(userId);
+        if(user != null){
+            UserVo userVO = new UserVo();
+            BeanUtils.copyProperties(user, userVO);
+            return MouseShortVideoResult.ok(userVO);
+        } else {
+            return MouseShortVideoResult.errorMsg("无该用户");
+        }
+    }
+
+
     @PostMapping("/uploadFaceImage")
     @ApiOperation("上传头像")
     public String uploadFaceIcon(String userId, @RequestParam("file") MultipartFile[] files) {

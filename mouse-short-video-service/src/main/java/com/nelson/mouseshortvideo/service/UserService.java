@@ -26,4 +26,6 @@ public interface UserService {
     Users login(Users user);
 
     void updateUser(Users user);
+
+    Users query(String userId);
 }
