@@ -1,11 +1,14 @@
 package com.nelson.mouseshortvideo.controller;
 
+import com.nelson.mouseshortvideo.enums.VideoStatusEnum;
 import com.nelson.mouseshortvideo.pojo.Bgm;
 import com.nelson.mouseshortvideo.pojo.Users;
 import com.nelson.mouseshortvideo.pojo.Videos;
 import com.nelson.mouseshortvideo.service.BgmService;
 import com.nelson.mouseshortvideo.service.UserService;
 import com.nelson.mouseshortvideo.service.VideoService;
+import com.nelson.mouseshortvideo.utils.FetchVideoCover;
+import com.nelson.mouseshortvideo.utils.MergeVideoMp3;
 import com.nelson.mouseshortvideo.utils.MouseShortVideoResult;
 import com.nelson.mouseshortvideo.vo.UserVo;
 import io.swagger.annotations.*;
@@ -22,21 +25,19 @@ import org.springframework.web.multipart.MultipartFile;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.InputStream;
+import java.util.Date;
 import java.util.UUID;
 
 @RestController
 @RequestMapping("/user")
 @Api(value = "用户相关业务接口")
 public class VideoController extends BasicController {
-    private static final String FILE_SPACE = "E:/mouse_short_video/";
-    @Autowired
-    private UserService mUserService;
 
     @Autowired
-    private BgmService mBgmService;
+    private BgmService bgmService;
 
     @Autowired
-    private VideoService mVideoService;
+    private VideoService videoService;
 
     @ApiOperation(value = "上传视频", notes = "上传视频的接口")
     @ApiImplicitParams({
@@ -53,7 +54,7 @@ public class VideoController extends BasicController {
             @ApiImplicitParam(name = "desc", value = "视频描述", required = false,
                     dataType = "String", paramType = "form")
     })
-    @PostMapping(value = "/uploadVideo", headers = "content-type=multipart/form-data")
+    @PostMapping(value = "/upload", headers = "content-type=multipart/form-data")
     public MouseShortVideoResult upload(String userId,
                                         String bgmId, double videoSeconds,
                                         int videoWidth, int videoHeight,
@@ -64,12 +65,12 @@ public class VideoController extends BasicController {
         if (StringUtils.isBlank(userId)) {
             return MouseShortVideoResult.errorMsg("用户id不能为空...");
         }
-        System.out.println("UserId : " + userId + " Desc : " + desc);
+
         // 文件保存的命名空间
 //		String fileSpace = "C:/imooc_videos_dev";
         // 保存到数据库中的相对路径
-        String uploadPathDB = "/" + userId + "/video";
-        String coverPathDB = "/" + userId + "/video";
+        String uploadPathDB = userId + "/video";
+        String coverPathDB = userId + "/video";
 
         FileOutputStream fileOutputStream = null;
         InputStream inputStream = null;
@@ -100,7 +101,6 @@ public class VideoController extends BasicController {
                         // 创建父文件夹
                         outFile.getParentFile().mkdirs();
                     }
-
                     fileOutputStream = new FileOutputStream(outFile);
                     inputStream = file.getInputStream();
                     IOUtils.copy(inputStream, fileOutputStream);
@@ -118,43 +118,41 @@ public class VideoController extends BasicController {
             }
         }
 
-//        // 判断bgmId是否为空，如果不为空，
-//        // 那就查询bgm的信息，并且合并视频，生产新的视频
-//        if (StringUtils.isNotBlank(bgmId)) {
-//            Bgm bgm = mBgmService.queryBgmById(bgmId);
-//            String mp3InputPath = FILE_SPACE + bgm.getPath();
-//
-//            MergeVideoMp3 tool = new MergeVideoMp3(FFMPEG_EXE);
-//            String videoInputPath = finalVideoPath;
-//
-//            String videoOutputName = UUID.randomUUID().toString() + ".mp4";
-//            uploadPathDB = "/" + userId + "/video" + "/" + videoOutputName;
-//            finalVideoPath = FILE_SPACE + uploadPathDB;
-//            tool.convertor(videoInputPath, mp3InputPath, videoSeconds, finalVideoPath);
-//        }
-//        System.out.println("uploadPathDB=" + uploadPathDB);
-//        System.out.println("finalVideoPath=" + finalVideoPath);
-//
-//        // 对视频进行截图
-//        FetchVideoCover videoInfo = new FetchVideoCover(FFMPEG_EXE);
-//        videoInfo.getCover(finalVideoPath, FILE_SPACE + coverPathDB);
-//
-//        // 保存视频信息到数据库
-//        Videos video = new Videos();
-//        video.setAudioId(bgmId);
-//        video.setUserId(userId);
-//        video.setVideoSeconds((float)videoSeconds);
-//        video.setVideoHeight(videoHeight);
-//        video.setVideoWidth(videoWidth);
-//        video.setVideoDesc(desc);
-//        video.setVideoPath(uploadPathDB);
-//        video.setCoverPath(coverPathDB);
-//        video.setStatus(VideoStatusEnum.SUCCESS.value);
-//        video.setCreateTime(new Date());
-//
-//        String videoId = videoService.saveVideo(video);
+        // 判断bgmId是否为空，如果不为空，
+        // 那就查询bgm的信息，并且合并视频，生产新的视频
+        if (StringUtils.isNotBlank(bgmId)) {
+            Bgm bgm = bgmService.queryBgmById(bgmId);
+            String mp3InputPath = FILE_SPACE + bgm.getPath();
 
-        return MouseShortVideoResult.ok();
+            MergeVideoMp3 tool = new MergeVideoMp3(FFMPEG_EXE);
+            String videoInputPath = finalVideoPath;
+
+            String videoOutputName = UUID.randomUUID().toString() + ".mp4";
+            uploadPathDB = "/" + userId + "/video" + "/" + videoOutputName;
+            finalVideoPath = FILE_SPACE + uploadPathDB;
+            tool.convertor(videoInputPath, mp3InputPath, videoSeconds, finalVideoPath);
+        }
+        System.out.println("uploadPathDB=" + uploadPathDB);
+        System.out.println("finalVideoPath=" + finalVideoPath);
+        // 对视频进行截图
+        FetchVideoCover videoInfo = new FetchVideoCover(FFMPEG_EXE);
+        videoInfo.getCover(finalVideoPath, FILE_SPACE + coverPathDB);
+        // 保存视频信息到数据库
+        Videos video = new Videos();
+        video.setAudioId(bgmId);
+        video.setUserId(userId);
+        video.setVideoSeconds((float) videoSeconds);
+        video.setVideoHeight(videoHeight);
+        video.setVideoWidth(videoWidth);
+        video.setVideoDesc(desc);
+        video.setVideoPath(uploadPathDB);
+        video.setCoverPath(coverPathDB);
+        video.setStatus(VideoStatusEnum.SUCCESS.value);
+        video.setCreateTime(new Date());
+
+        String videoId = videoService.saveVideo(video);
+
+        return MouseShortVideoResult.ok(videoId);
     }
 
 }

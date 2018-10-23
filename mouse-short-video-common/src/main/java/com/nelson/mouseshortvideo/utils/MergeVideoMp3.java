@@ -57,6 +57,5 @@ public class MergeVideoMp3 {
 		if (errorStream != null) {
 			errorStream.close();
 		}
-		
 	}
 }
