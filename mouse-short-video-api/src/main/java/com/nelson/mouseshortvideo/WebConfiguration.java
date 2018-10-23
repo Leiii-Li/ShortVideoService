@@ -9,6 +9,7 @@ public class WebConfiguration extends WebMvcConfigurerAdapter {
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         registry.addResourceHandler("/**")
+        .addResourceLocations("classpath:/META-INF/resources/")
         .addResourceLocations("file:E:/mouse_short_video/");
     }
 }
