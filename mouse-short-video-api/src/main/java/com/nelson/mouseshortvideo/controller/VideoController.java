@@ -69,8 +69,8 @@ public class VideoController extends BasicController {
         // 文件保存的命名空间
 //		String fileSpace = "C:/imooc_videos_dev";
         // 保存到数据库中的相对路径
-        String uploadPathDB = userId + "/video";
-        String coverPathDB = userId + "/video";
+        String uploadPathDB = "/" + userId + "/video";
+        String coverPathDB = uploadPathDB;
 
         FileOutputStream fileOutputStream = null;
         InputStream inputStream = null;
@@ -78,7 +78,6 @@ public class VideoController extends BasicController {
         String finalVideoPath = "";
         try {
             if (file != null) {
-
                 String fileName = file.getOriginalFilename();
                 // abc.mp4
                 String arrayFilenameItem[] = fileName.split("\\.");
