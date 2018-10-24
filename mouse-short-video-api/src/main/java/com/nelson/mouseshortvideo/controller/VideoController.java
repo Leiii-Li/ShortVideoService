@@ -7,10 +7,13 @@ import com.nelson.mouseshortvideo.pojo.Videos;
 import com.nelson.mouseshortvideo.service.BgmService;
 import com.nelson.mouseshortvideo.service.UserService;
 import com.nelson.mouseshortvideo.service.VideoService;
+import com.nelson.mouseshortvideo.service.VideoVoService;
 import com.nelson.mouseshortvideo.utils.FetchVideoCover;
 import com.nelson.mouseshortvideo.utils.MergeVideoMp3;
 import com.nelson.mouseshortvideo.utils.MouseShortVideoResult;
+import com.nelson.mouseshortvideo.utils.PagedResult;
 import com.nelson.mouseshortvideo.vo.UserVo;
+import com.nelson.mouseshortvideo.vo.VideoVo;
 import io.swagger.annotations.*;
 import org.apache.commons.io.IOUtils;
 import org.apache.commons.lang3.StringUtils;
@@ -22,10 +25,12 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 
+import javax.jnlp.IntegrationService;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.InputStream;
 import java.util.Date;
+import java.util.List;
 import java.util.UUID;
 
 @RestController
@@ -38,6 +43,9 @@ public class VideoController extends BasicController {
 
     @Autowired
     private VideoService videoService;
+
+    @Autowired
+    private VideoVoService mVideosVoService;
 
     @ApiOperation(value = "上传视频", notes = "上传视频的接口")
     @ApiImplicitParams({
@@ -54,7 +62,7 @@ public class VideoController extends BasicController {
             @ApiImplicitParam(name = "desc", value = "视频描述", required = false,
                     dataType = "String", paramType = "form")
     })
-    @PostMapping(value = "/upload", headers = "content-type=multipart/form-data")
+    @PostMapping(value = "/uploadVideo", headers = "content-type=multipart/form-data")
     public MouseShortVideoResult upload(String userId,
                                         String bgmId, double videoSeconds,
                                         int videoWidth, int videoHeight,
@@ -154,4 +162,13 @@ public class VideoController extends BasicController {
         return MouseShortVideoResult.ok(videoId);
     }
 
+    @ApiOperation(value = "视频查询接口", notes = "视频查询的接口")
+    @ApiImplicitParams({
+            @ApiImplicitParam(name = "pageIndex", value = "页码", required = false,
+                    dataType = "Integer", paramType = "query")})
+    @PostMapping("/queryAll")
+    public MouseShortVideoResult queryAllVideos(Integer pageIndex) {
+        PagedResult pagedResult = mVideosVoService.queryAll(pageIndex, 10);
+        return MouseShortVideoResult.ok(pagedResult);
+    }
 }
