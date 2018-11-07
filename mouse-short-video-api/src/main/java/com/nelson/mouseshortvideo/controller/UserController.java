@@ -22,13 +22,11 @@ import java.io.*;
 import java.util.UUID;
 
 @RestController
-@RequestMapping("/user")
 @Api(value = "用户相关业务接口")
 public class UserController extends BasicController {
     private static final String FILE_SPACE = "E:/mouse_short_video/";
     @Autowired
     private UserService mUserService;
-
 
     @PostMapping("/query")
     @ApiOperation("查询用户信息")
@@ -49,7 +47,7 @@ public class UserController extends BasicController {
     }
 
 
-    @PostMapping("/uploadFaceImage")
+    @PostMapping("/user/uploadFaceImage")
     @ApiOperation("上传头像")
     public String uploadFaceIcon(String userId, @RequestParam("file") MultipartFile[] files) {
         if (StringUtils.isBlank(userId)) {

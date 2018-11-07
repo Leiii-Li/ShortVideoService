@@ -12,6 +12,8 @@ public class SearchRecords {
      */
     private String content;
 
+    private Integer count;
+
     /**
      * @return id
      */
@@ -42,5 +44,19 @@ public class SearchRecords {
      */
     public void setContent(String content) {
         this.content = content;
+    }
+
+    /**
+     * @return count
+     */
+    public Integer getCount() {
+        return count;
+    }
+
+    /**
+     * @param count
+     */
+    public void setCount(Integer count) {
+        this.count = count;
     }
 }

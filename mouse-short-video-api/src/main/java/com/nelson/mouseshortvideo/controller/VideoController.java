@@ -1,40 +1,35 @@
 package com.nelson.mouseshortvideo.controller;
 
 import com.nelson.mouseshortvideo.enums.VideoStatusEnum;
-import com.nelson.mouseshortvideo.pojo.Bgm;
-import com.nelson.mouseshortvideo.pojo.Users;
-import com.nelson.mouseshortvideo.pojo.Videos;
-import com.nelson.mouseshortvideo.service.BgmService;
-import com.nelson.mouseshortvideo.service.UserService;
-import com.nelson.mouseshortvideo.service.VideoService;
-import com.nelson.mouseshortvideo.service.VideoVoService;
+import com.nelson.mouseshortvideo.pojo.*;
+import com.nelson.mouseshortvideo.service.*;
 import com.nelson.mouseshortvideo.utils.FetchVideoCover;
 import com.nelson.mouseshortvideo.utils.MergeVideoMp3;
 import com.nelson.mouseshortvideo.utils.MouseShortVideoResult;
 import com.nelson.mouseshortvideo.utils.PagedResult;
-import com.nelson.mouseshortvideo.vo.UserVo;
-import com.nelson.mouseshortvideo.vo.VideoVo;
+import com.nelson.mouseshortvideo.vo.CommentsVO;
+import com.nelson.mouseshortvideo.vo.PublisherVideo;
+import com.nelson.mouseshortvideo.vo.UsersVO;
 import io.swagger.annotations.*;
 import org.apache.commons.io.IOUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 
-import javax.jnlp.IntegrationService;
+import javax.xml.stream.events.Comment;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.InputStream;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.UUID;
 
 @RestController
-@RequestMapping("/user")
 @Api(value = "用户相关业务接口")
 public class VideoController extends BasicController {
 
@@ -43,6 +38,11 @@ public class VideoController extends BasicController {
 
     @Autowired
     private VideoService videoService;
+
+    @Autowired
+    private UserService userService;
+    @Autowired
+    private SearchRecodeService mSearchRecodeService;
 
     @Autowired
     private VideoVoService mVideosVoService;
@@ -62,7 +62,7 @@ public class VideoController extends BasicController {
             @ApiImplicitParam(name = "desc", value = "视频描述", required = false,
                     dataType = "String", paramType = "form")
     })
-    @PostMapping(value = "/uploadVideo", headers = "content-type=multipart/form-data")
+    @PostMapping(value = "/user/uploadVideo", headers = "content-type=multipart/form-data")
     public MouseShortVideoResult upload(String userId,
                                         String bgmId, double videoSeconds,
                                         int videoWidth, int videoHeight,
@@ -165,10 +165,99 @@ public class VideoController extends BasicController {
     @ApiOperation(value = "视频查询接口", notes = "视频查询的接口")
     @ApiImplicitParams({
             @ApiImplicitParam(name = "pageIndex", value = "页码", required = false,
-                    dataType = "Integer", paramType = "query")})
+                    dataType = "Integer", paramType = "query"),
+            @ApiImplicitParam(name = "desc", value = "视频描述", required = false,
+                    dataType = "String", paramType = "query"),
+            @ApiImplicitParam(name = "userId", value = "视频描述", required = false,
+                    dataType = "String", paramType = "query")
+    })
     @PostMapping("/queryAll")
-    public MouseShortVideoResult queryAllVideos(Integer pageIndex) {
-        PagedResult pagedResult = mVideosVoService.queryAll(pageIndex, 10);
+    public MouseShortVideoResult queryAllVideos(String desc, String userId, Integer pageIndex) {
+        if (pageIndex == null) {
+            pageIndex = 1;
+        }
+        PagedResult pagedResult = mVideosVoService.queryAll(pageIndex, 10, desc, userId);
         return MouseShortVideoResult.ok(pagedResult);
     }
+
+    @PostMapping("/hots")
+    public MouseShortVideoResult hotList() {
+        List<SearchRecords> recordList = mSearchRecodeService.queryAll();
+        List<String> result = new ArrayList<>();
+        for (SearchRecords record : recordList) {
+            result.add(record.getContent());
+        }
+        return MouseShortVideoResult.ok(result);
+    }
+
+
+    @PostMapping(value = "/user/userLike")
+    public MouseShortVideoResult userLike(String userId, String videoId, String videoCreaterId)
+            throws Exception {
+        videoService.userLikeVideo(userId, videoId, videoCreaterId);
+        return MouseShortVideoResult.ok();
+    }
+
+    /**
+     * @Description: 我收藏(点赞)过的视频列表
+     */
+    @PostMapping("/user/showMyLike")
+    public MouseShortVideoResult showMyLike(String userId, Integer page, Integer pageSize) throws Exception {
+
+        if (StringUtils.isBlank(userId)) {
+            return MouseShortVideoResult.ok();
+        }
+
+        if (page == null) {
+            page = 1;
+        }
+
+        if (pageSize == null) {
+            pageSize = 6;
+        }
+        PagedResult videosList = mVideosVoService.queryMyLikeVideos(userId, page, pageSize);
+        return MouseShortVideoResult.ok(videosList);
+    }
+
+    @PostMapping(value = "/user/userUnLike")
+    public MouseShortVideoResult userUnLike(String userId, String videoId, String videoCreaterId) throws Exception {
+        videoService.userUnLikeVideo(userId, videoId, videoCreaterId);
+        return MouseShortVideoResult.ok();
+    }
+
+    @PostMapping(value = "/user/saveComment")
+    public MouseShortVideoResult saveComment(@RequestBody Comments comment) {
+        mVideosVoService.saveComment(comment);
+        return MouseShortVideoResult.ok();
+    }
+
+    @PostMapping("/getVideoComments")
+    public MouseShortVideoResult getVideoComments(String videoId) {
+        List<CommentsVO> comments = videoService.getAllComments(videoId);
+        return MouseShortVideoResult.ok(comments);
+    }
+
+    @PostMapping("/queryPublisher")
+    public MouseShortVideoResult queryPublisher(String loginUserId, String videoId,
+                                                String publishUserId) throws Exception {
+
+        if (StringUtils.isBlank(publishUserId)) {
+            return MouseShortVideoResult.errorMsg("");
+        }
+
+        // 1. 查询视频发布者的信息
+        Users userInfo = userService.queryUserInfo(publishUserId);
+        UsersVO publisher = new UsersVO();
+        BeanUtils.copyProperties(userInfo, publisher);
+
+        // 2. 查询当前登录者和视频的点赞关系
+        boolean userLikeVideo = userService.isUserLikeVideo(loginUserId, videoId);
+
+        PublisherVideo bean = new PublisherVideo();
+        bean.setPublisher(publisher);
+        bean.setUserLikeVideo(userLikeVideo);
+
+        return MouseShortVideoResult.ok(bean);
+    }
+
 }

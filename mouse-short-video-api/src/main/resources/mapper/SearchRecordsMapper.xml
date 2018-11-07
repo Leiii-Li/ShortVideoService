@@ -7,5 +7,9 @@
     -->
     <id column="id" property="id" jdbcType="VARCHAR" />
     <result column="content" property="content" jdbcType="VARCHAR" />
+    <result column="count" property="count" jdbcType="INTEGER" />
   </resultMap>
+  <select id="queryAll" resultMap="BaseResultMap">
+    select * from search_records order by count desc limit 10
+  </select>
 </mapper>

@@ -115,6 +115,8 @@ public class RedisOperator {
 		redisTemplate.opsForHash().put(key, field, value);
 	}
 
+
+
 	/**
 	 * 实现命令：HGET key field，返回哈希表 key中给定域 field的值
 	 * 

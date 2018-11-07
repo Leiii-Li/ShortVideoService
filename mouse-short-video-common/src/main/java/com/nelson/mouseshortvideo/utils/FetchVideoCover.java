@@ -73,4 +73,15 @@ public class FetchVideoCover {
 	public FetchVideoCover(String ffmpegEXE) {
 		this.ffmpegEXE = ffmpegEXE;
 	}
+
+	public static void main(String[] args) {
+		// 获取视频信息。
+		FetchVideoCover videoInfo = new FetchVideoCover("E:\\ffmpeg\\bin\\ffmpeg.exe");
+		try {
+			videoInfo.getCover("E:\\mouse_short_video\\18102271KR338WDP\\video\\video11.mp4","E:\\mouse_short_video\\18102271KR338WDP\\video\\video11.jpg");
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
 }
