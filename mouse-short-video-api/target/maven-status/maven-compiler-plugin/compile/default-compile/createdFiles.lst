@@ -1,0 +1,11 @@
+com\nelson\mouseshortvideo\controller\UserController.class
+com\nelson\mouseshortvideo\DemoApplication.class
+com\nelson\mouseshortvideo\controller\BgmController.class
+com\nelson\mouseshortvideo\ServletInitializer.class
+com\nelson\mouseshortvideo\interceptor\MiniInterceptor.class
+com\nelson\mouseshortvideo\controller\RegisterLoginController.class
+com\nelson\mouseshortvideo\Swagger2.class
+com\nelson\mouseshortvideo\controller\BasicController.class
+com\nelson\mouseshortvideo\controller\VideoController.class
+com\nelson\mouseshortvideo\WebConfiguration.class
+com\nelson\mouseshortvideo\controller\IndexController.class

@@ -24,7 +24,6 @@ import java.util.UUID;
 @RestController
 @Api(value = "用户相关业务接口")
 public class UserController extends BasicController {
-    private static final String FILE_SPACE = "E:/mouse_short_video/";
     @Autowired
     private UserService mUserService;
 

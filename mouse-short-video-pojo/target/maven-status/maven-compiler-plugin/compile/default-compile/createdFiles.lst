@@ -1,0 +1,13 @@
+com\nelson\mouseshortvideo\pojo\Bgm.class
+com\nelson\mouseshortvideo\vo\PublisherVideo.class
+com\nelson\mouseshortvideo\pojo\UsersFans.class
+com\nelson\mouseshortvideo\pojo\SearchRecords.class
+com\nelson\mouseshortvideo\vo\VideoVo.class
+com\nelson\mouseshortvideo\pojo\Videos.class
+com\nelson\mouseshortvideo\pojo\UsersReport.class
+com\nelson\mouseshortvideo\vo\UserVo.class
+com\nelson\mouseshortvideo\pojo\Users.class
+com\nelson\mouseshortvideo\vo\UsersVO.class
+com\nelson\mouseshortvideo\vo\CommentsVO.class
+com\nelson\mouseshortvideo\pojo\Comments.class
+com\nelson\mouseshortvideo\pojo\UsersLikeVideos.class

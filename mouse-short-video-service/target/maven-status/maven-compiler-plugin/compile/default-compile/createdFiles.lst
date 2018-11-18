@@ -1,0 +1,10 @@
+com\nelson\mouseshortvideo\service\BgmServiceImpl.class
+com\nelson\mouseshortvideo\service\UserServiceImpl.class
+com\nelson\mouseshortvideo\service\VideoServiceImpl.class
+com\nelson\mouseshortvideo\service\VideoVoServiceImpl.class
+com\nelson\mouseshortvideo\service\SearchRecodeService.class
+com\nelson\mouseshortvideo\service\SearchRecodeServiceImpl.class
+com\nelson\mouseshortvideo\service\VideoService.class
+com\nelson\mouseshortvideo\service\BgmService.class
+com\nelson\mouseshortvideo\service\UserService.class
+com\nelson\mouseshortvideo\service\VideoVoService.class

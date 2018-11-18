@@ -13,7 +13,7 @@ public class WebConfiguration extends WebMvcConfigurerAdapter {
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         registry.addResourceHandler("/**")
                 .addResourceLocations("classpath:/META-INF/resources/")
-                .addResourceLocations("file:E:/mouse_short_video/");
+                .addResourceLocations("file:/home/mouse_short_video/");
     }
 
     @Bean

@@ -13,6 +13,6 @@ public class IndexController {
     @ApiOperation("欢迎接口")
     @RequestMapping("/")
     public String index(){
-        return "WellCome Mouse Short Video,Enjoy The Mini Program";
+        return "WellCome To Rat Short Video,Enjoy The Mini Application";
     }
 }

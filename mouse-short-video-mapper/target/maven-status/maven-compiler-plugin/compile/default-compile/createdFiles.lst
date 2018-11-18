@@ -1,0 +1,10 @@
+com\nelson\mouseshortvideo\mapper\UsersReportMapper.class
+com\nelson\mouseshortvideo\mapper\VideosMapperCustom.class
+com\nelson\mouseshortvideo\mapper\BgmMapper.class
+com\nelson\mouseshortvideo\mapper\SearchRecordsMapper.class
+com\nelson\mouseshortvideo\mapper\UsersFansMapper.class
+com\nelson\mouseshortvideo\mapper\UsersLikeVideosMapper.class
+com\nelson\mouseshortvideo\mapper\VideosMapper.class
+com\nelson\mouseshortvideo\mapper\UsersMapper.class
+com\nelson\mouseshortvideo\mapper\CommentsMapper.class
+com\nelson\mouseshortvideo\mapper\CommentsMapperCustom.class

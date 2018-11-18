@@ -231,6 +231,9 @@ public class VideoController extends BasicController {
         return MouseShortVideoResult.ok();
     }
 
+    @ApiOperation(value = "视频评论查询接口", notes = "视频评论查询接口")
+    @ApiImplicitParams({
+            @ApiImplicitParam(name = "videoId", value = "视频ID", paramType = "query", required = true)})
     @PostMapping("/getVideoComments")
     public MouseShortVideoResult getVideoComments(String videoId) {
         List<CommentsVO> comments = videoService.getAllComments(videoId);
